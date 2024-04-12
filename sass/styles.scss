@@ -1,0 +1,47 @@
+@import "./partials/_variables.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+header {
+    display: flex;
+    margin: 2% 0 0 2%;
+    .logo {
+        align-self: flex-start;
+        margin-right: auto;
+    }
+    nav {
+        align-items: flex-end;
+        margin: 1% 2% 0 0;
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            &:hover{
+                border-radius: 15px;
+                background-color: rgba(99, 99, 99, 0.5);
+            }
+        }
+        a#top {
+            text-decoration: underline;
+            text-underline-offset: 50%;
+        }
+        a#contact {
+            background-color: $main-color;
+            border-radius: 15px;
+        }
+        
+    }
+}
+
+.panel {
+    border-top: 1px solid #000;
+    background-color: beige;
+    .panel1-left {
+        background-color: #ff0000;
+    }
+}

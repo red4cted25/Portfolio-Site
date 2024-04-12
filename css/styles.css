@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  margin: 2% 0 0 2%;
+}
+header .logo {
+  align-self: flex-start;
+  margin-right: auto;
+}
+header nav {
+  align-items: flex-end;
+  margin: 1% 2% 0 0;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+header nav a:hover {
+  border-radius: 15px;
+  background-color: rgba(99, 99, 99, 0.5);
+}
+header nav a#top {
+  text-decoration: underline;
+  text-underline-offset: 50%;
+}
+header nav a#contact {
+  background-color: #ff0051;
+  border-radius: 15px;
+}
+
+.panel {
+  border-top: 1px solid #000;
+  background-color: beige;
+}
+.panel .panel1-left {
+  background-color: #ff0000;
+}/*# sourceMappingURL=styles.css.map */
