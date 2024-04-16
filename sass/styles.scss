@@ -5,11 +5,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: $font;
+    body {
+        background-color: #000;
+    }
 }
 
 header {
     display: flex;
-    margin: 2% 0 0 2%;
+    background-color: rgba(187, 187, 187, 0.15);
+    padding: 2% 0 0 2%;
     .logo {
         align-self: flex-start;
         margin-right: auto;
@@ -43,5 +47,33 @@ header {
     background-color: beige;
     .panel1-left {
         background-color: #ff0000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: solid #000;
     }
+    .panel2-right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.portfolio {
+    display: flex;
+    height: 100vh;
+    h1 {
+        font-size: 35vh;
+        color: #ff0000;
+        align-self: center;
+        justify-self: center;
+        overflow-x: hidden;
+        white-space: nowrap;
+    }
+}
+
+footer {
+    background-color: #ff0000;
+    padding: 2% 15% 2% 15%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
