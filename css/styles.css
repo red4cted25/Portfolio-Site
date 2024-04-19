@@ -59,7 +59,7 @@ header nav a#contact {
   display: flex;
   height: 100vh;
 }
-.portfolio h1 {
+.portfolio .marquee {
   font-size: 35vh;
   color: #ff0000;
   align-self: center;

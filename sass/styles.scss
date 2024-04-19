@@ -57,16 +57,16 @@ header {
         flex-wrap: wrap;
     }
 }
+
 .portfolio {
     display: flex;
     height: 100vh;
-    h1 {
+    .marquee {
         font-size: 35vh;
         color: #ff0000;
         align-self: center;
         justify-self: center;
-        overflow-x: hidden;
-        white-space: nowrap;
+        overflow: hidden;
     }
 }
 
