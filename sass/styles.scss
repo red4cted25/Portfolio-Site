@@ -61,12 +61,13 @@ header {
 .portfolio {
     display: flex;
     height: 100vh;
+    overflow: hidden;
     .marquee {
         font-size: 35vh;
-        color: #ff0000;
         align-self: center;
         justify-self: center;
-        overflow: hidden;
+        -webkit-text-stroke: 7px #ff0000;
+        color: beige;
     }
 }
 

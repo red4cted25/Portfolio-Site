@@ -58,14 +58,17 @@ header nav a#contact {
 .portfolio {
   display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 .portfolio .marquee {
   font-size: 35vh;
-  color: #ff0000;
   align-self: center;
   justify-self: center;
-  overflow-x: hidden;
   white-space: nowrap;
+  clear: both;
+  float: left;
+  -webkit-text-stroke: 7px #ff0000;
+  color: beige;
 }
 
 footer {
