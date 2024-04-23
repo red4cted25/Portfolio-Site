@@ -83,6 +83,75 @@ header nav a#contact {
   color: beige;
 }
 
+section {
+  overflow-x: hidden;
+}
+section .record-collection {
+  white-space: nowrap;
+  z-index: 0;
+}
+section .record-collection .albumcover, section .record-collection .first-albumcover {
+  height: 400px;
+  width: 400px;
+  margin: 5vh 0 1vh 0;
+  box-shadow: 3px 3px 5px black;
+  display: inline-block;
+  text-align: right;
+}
+section .record-collection .first-albumcover {
+  position: relative;
+  z-index: 20;
+}
+section .record-collection .albumcover {
+  position: relative;
+}
+section .record-collection .albumcover:hover {
+  transform: rotate(-2deg) translate(333px);
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+  transform-origin: 0 100%;
+}
+section .record-collection #album-0 {
+  background-image: url("../Images/tictactoe.png");
+  background-size: cover;
+}
+section .record-collection #album-1 {
+  background-image: url("../Images/gallery.jpg");
+  background-size: cover;
+}
+section .record-collection #album-2 {
+  background-image: url("https://coverartarchive.org/release/9f4dcffe-8772-44eb-8772-a0edf2c6529f/2685041429-250.jpg");
+  background-size: cover;
+}
+section .record-collection #album-3 {
+  background-image: url("https://coverartarchive.org/release/6b575427-f110-4c22-bdeb-89620f534da2/8886708360-500.jpg");
+  background-size: cover;
+}
+section .record-collection #album-4 {
+  background-image: url("https://coverartarchive.org/release/a5839dc7-4419-4277-a6fc-f8edebac4d49/979861011-250.jpg");
+  background-size: cover;
+}
+section .record-collection #album-5 {
+  background-image: url("https://coverartarchive.org/release/672d8c35-24f6-499e-b378-70397b876f97/16311779496-250.jpg");
+  background-size: cover;
+}
+section .record-collection #album-6 {
+  background-image: url("https://coverartarchive.org/release/3c506edb-a0fd-4a6e-9111-743dce63e4d0/11547633135-250.jpg");
+  background-size: cover;
+}
+section .record-collection #album-7 {
+  background-image: url("https://coverartarchive.org/release/88ab7a5c-fd27-421e-85f0-f107ed86a43f/21986047480-250.jpg");
+  background-size: cover;
+}
+section .record-collection #album-8 {
+  background-image: url("https://coverartarchive.org/release/bb772ff7-7ed8-435b-9bfe-90df819fa605/2342278124-250.jpg");
+  background-size: cover;
+}
+section .record-collection #album-9 {
+  background-image: url("https://coverartarchive.org/release/f6758afb-ecff-410e-8979-b131cfa3c6d3/4114654841-250.jpg");
+  background-size: cover;
+}
+
 footer {
   background-color: #942c2c;
   padding: 2% 15% 2% 15%;
