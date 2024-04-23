@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="logo"><img src="./Images/logo.png" alt="Nico Diaz's Logo"></div>
         <nav>
-            <a id="top" href="#">Home</a>
+            <a id="top" href="#home">Home</a>
             <a href="#">About</a>
             <a href="#">Resume</a>
             <a href="#">Projects</a>
@@ -18,22 +18,24 @@
         </nav>
     </header>
     <section class="hero">
-        <div class="hero-bg"><img src="#" alt="#"></div>
+        <div class="hero-bg"></div>
         <div class="hero-text">
             <h1>Nico</h1>
         </div>
         <div class="hero-buttons">
-            <div>Entry Level Developer</div>
-            <div>Est. 2024</div>
+            <div class="button">Entry Level Developer</div>
+            <div class="button">Est. 2024</div>
         </div>
     </section>
     <div class="panel panel1">
         <div id="panel1-left">
-            <img src="https://placehold.co/350x350" alt="#">
+            <div id="bend"></div>
         </div>
         <div id="panel1-right">
-            <h2>Who ... <br><span>Is</span> Nico?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur esse inventore veniam, sint ullam nostrum illum incidunt facilis aliquid obcaecati?</p>
+            <h2>Who ... <em>Is</em> Nico?</h2>
+            <p>I'm Nicolas Diaz, or Nico, and I'm a driven and adept entry level web developer with an immense passion for both web development and technology. </p>
+            <br>
+            <p></p>
             <div id="keep-scrolling">
                 <h6>KEEP SCROLLING</h6>
                 <img src="./Images/arrow.png" alt="arrow">
@@ -58,16 +60,28 @@
     </div>
     <section class="panel">
         <div class="record-collection" id="record-collection">
-            <div class="first-albumcover" id="album-0"></div>
-            <div class="albumcover" id="album-1"></div>
-            <div class="albumcover" id="album-2"></div>
-            <div class="albumcover" id="album-3"></div>
-            <div class="albumcover" id="album-4"></div>
-            <div class="albumcover" id="album-5"></div>
-            <div class="albumcover" id="album-6"></div>
-            <div class="albumcover" id="album-7"></div>
-            <div class="albumcover" id="album-8"></div>
-            <div class="albumcover" id="album-9"></div>
+            <div class="first-albumcover" id="album-0" onclick="openModal()">
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div id="album-0"></div>
+                        <div id="modal-logos">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github Logo">
+                            <img src="https://static-00.iconduck.com/assets.00/outside-page-icon-256x256-wvcnid4j.png" alt="Open In New Page">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="albumcover" id="album-1" onclick="openModal()"></div>
+            <div class="albumcover" id="album-2" onclick="openModal()"></div>
+            <div class="albumcover" id="album-3" onclick="openModal()"></div>
+            <div class="albumcover" id="album-4" onclick="openModal()"></div>
+            <div class="albumcover" id="album-5" onclick="openModal()"></div>
+            <div class="albumcover" id="album-6" onclick="openModal()"></div>
+            <div class="albumcover" id="album-7" onclick="openModal()"></div>
+            <div class="albumcover" id="album-8" onclick="openModal()"></div>
+            <div class="albumcover" id="album-9" onclick="openModal()"></div>
         </div>
     </section>
     <footer>

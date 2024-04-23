@@ -2,3 +2,21 @@ $main-color: #942c2c;
 $text-color: #000;
 $background-color: #ffecd7;
 $font: georgia-times, georgia;
+
+@font-face {
+    font-family: 'Astronika';
+    src: url(".../Assets/astronika.regular.otf") format('otf');
+}
+
+@mixin albumCover($album:false) {
+    height: 400px;
+    width: 400px;
+    margin: 5vh 0 1vh 0;
+    box-shadow: 3px 3px 5px black;
+    display: inline-block;
+    text-align: right;
+    @if($album:true) {
+        background-image: url($album);
+        background-size: cover;
+    }
+}

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Astronika";
+  src: url(".../Assets/astronika.regular.otf") format("otf");
+}
 * {
   padding: 0;
   margin: 0;
@@ -39,6 +43,29 @@ header nav a#contact {
   border-radius: 15px;
 }
 
+.hero .hero-bg {
+  background-image: url("../Images/hero.jpg");
+  background-size: cover;
+}
+.hero .hero-text {
+  text-align: center;
+  font-family: "Astronika";
+  color: white;
+  font-size: 8vw;
+}
+.hero .hero-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 40% auto 40%;
+}
+.hero .hero-buttons .button {
+  background-color: #942c2c;
+  border: 3px solid #333;
+  text-align: center;
+  padding: 1vh 0.75vw;
+  border-radius: 16px;
+}
+
 .panel {
   border-top: 1px solid #000;
   background-color: beige;
@@ -53,8 +80,16 @@ header nav a#contact {
   border-right: solid #000;
   width: 30%;
 }
+.panel #panel1-left #bend {
+  background-image: url(../Images/bend.jpg);
+  height: 350px;
+  width: 350px;
+  background-size: cover;
+  background-position: 0 40%;
+}
 .panel #panel1-right {
   display: flex;
+  flex-flow: column wrap;
 }
 .panel #panel1-right h2 {
   color: #942c2c;
@@ -62,7 +97,6 @@ header nav a#contact {
   position: relative;
   top: 3vh;
   left: 1.75vw;
-  z-index: 1;
 }
 .panel #panel1-right #keep-scrolling {
   position: relative;
@@ -85,6 +119,7 @@ header nav a#contact {
 
 section {
   overflow-x: hidden;
+  /* The Modal (background) */
 }
 section .record-collection {
   white-space: nowrap;
@@ -97,6 +132,8 @@ section .record-collection .albumcover, section .record-collection .first-albumc
   box-shadow: 3px 3px 5px black;
   display: inline-block;
   text-align: right;
+  background-image: url(false);
+  background-size: cover;
 }
 section .record-collection .first-albumcover {
   position: relative;
@@ -112,7 +149,7 @@ section .record-collection .albumcover:hover {
   transform-origin: 0 100%;
 }
 section .record-collection #album-0 {
-  background-image: url("../Images/tictactoe.png");
+  background-image: url("../Images/tictactoe.jpg");
   background-size: cover;
 }
 section .record-collection #album-1 {
@@ -120,11 +157,11 @@ section .record-collection #album-1 {
   background-size: cover;
 }
 section .record-collection #album-2 {
-  background-image: url("https://coverartarchive.org/release/9f4dcffe-8772-44eb-8772-a0edf2c6529f/2685041429-250.jpg");
+  background-image: url("../Images/calculator.jpg");
   background-size: cover;
 }
 section .record-collection #album-3 {
-  background-image: url("https://coverartarchive.org/release/6b575427-f110-4c22-bdeb-89620f534da2/8886708360-500.jpg");
+  background-image: url("../Images/business.jpg");
   background-size: cover;
 }
 section .record-collection #album-4 {
@@ -150,6 +187,52 @@ section .record-collection #album-8 {
 section .record-collection #album-9 {
   background-image: url("https://coverartarchive.org/release/f6758afb-ecff-410e-8979-b131cfa3c6d3/4114654841-250.jpg");
   background-size: cover;
+}
+section .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  /* Modal Content/Box */
+}
+section .modal .modal-content {
+  background-color: rgba(255, 236, 215, 0.9);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 2px solid #888;
+  width: 50vw; /* Could be more or less, depending on screen size */
+  /* The Close Button */
+}
+section .modal .modal-content .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+section .modal .modal-content .close:hover, section .modal .modal-content .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+section .modal .modal-content #album-0 {
+  height: 400px;
+  width: 400px;
+  background-image: url(../Images/tictactoe.jpg);
+  background-size: cover;
+}
+section .modal .modal-content #modal-logos {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 40% auto 40%;
+}
+section .modal .modal-content #modal-logos img {
+  height: 50px;
+  width: 50px;
 }
 
 footer {
