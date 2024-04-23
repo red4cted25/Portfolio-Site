@@ -20,3 +20,12 @@ function animate(element) {
         }
     }, 10);
 }
+
+let albumCovers = document.getElementsByClassName("albumcover");
+let recordBox = document.getElementById("record-collection");
+
+const factor = -350;
+for (var i = 0; i < albumCovers.length; i++) {
+    albumCovers[i].style.left = (factor + (i * factor) + "px");
+    albumCovers[i].style.zIndex = "" + 19 - i + "";
+}
