@@ -45,16 +45,31 @@ header {
 .panel {
     border-top: 1px solid #000;
     background-color: beige;
-    .panel1-left {
-        background-color: #ff0000;
+    display: flex;
+    #panel1-left {
         display: flex;
+        padding: 5vh;
+        background-color: $main-color;
         align-items: center;
         justify-content: center;
         border-right: solid #000;
+        width: 30%;
     }
-    .panel2-right {
+    #panel1-right {
         display: flex;
-        flex-wrap: wrap;
+        h2 {
+            color: $main-color;
+            font-size: 3vw;
+            position: relative;
+                top: 3vh;
+                left: 1.75vw;
+            z-index: 1;
+        }
+        #keep-scrolling {
+            position: relative;
+                top: 30vh;
+                left: 1.75vw;
+        }
     }
 }
 
@@ -66,13 +81,13 @@ header {
         font-size: 35vh;
         align-self: center;
         justify-self: center;
-        -webkit-text-stroke: 7px #ff0000;
+        -webkit-text-stroke: 7px $main-color;
         color: beige;
     }
 }
 
 footer {
-    background-color: #ff0000;
+    background-color: $main-color;
     padding: 2% 15% 2% 15%;
     display: flex;
     flex-flow: row nowrap;
